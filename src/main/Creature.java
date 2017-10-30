@@ -77,23 +77,21 @@ public class Creature {
 
         if(happiness<=0||energy<=0||fullness<=0){
             print(this.getName()+"has died! You're a bad owner");
-            System.exit(status:0);
+            System.exit(0);
         }
 
         if (happiness<=6){
-            status+="Oh"+this.getName+"is feeling sad!\n";
+            status+="Oh"+this.getName()+"is feeling sad!\n";
 
         }
         if (fullness<=6){
-            status+="Hmm"+this.getName+"is super hungry!\n";
+            status+="Hmm"+this.getName()+"is super hungry!\n";
 
         }
         if (energy<=6){
-            status+="Woops"+this.getName+"is really tired!\n";
+            status+="Woops"+this.getName()+"is really tired!\n";
 
         }
-
-
 
         return status;
     }
